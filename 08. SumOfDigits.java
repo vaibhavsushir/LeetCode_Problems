@@ -7,12 +7,4 @@ import java.util.Scanner;
         int sum = sumofdigits(num);
         System.out.println("Sum Of Digits Is: "+sum);
     }
-    public static int sumofdigits(int num){
-        int sum = 0;
-        while(num > 0){
-            sum = sum + num % 10;
-            num /= 10;
-        }
-        return  sum;
-    }
 }
