@@ -1,6 +1,6 @@
 import java.util.Scanner;
- class ReverseNo {
-    public static void main(String[] args) {
+ class ReverseNo{
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Your Number: ");
         int num = input.nextInt();
