@@ -10,7 +10,6 @@ import java.util.Scanner;
         System.out.println("After Rotation");
         rotateinplace(arr,k);
         printarray(arr);
-
     }
     public static void printarray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
