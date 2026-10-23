@@ -11,12 +11,6 @@ import java.util.Scanner;
         rotateinplace(arr,k);
         printarray(arr);
     }
-    public static void printarray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
     static void rotateinplace(int[] arr, int k) {
         int n = arr.length;
         k = k % n;
