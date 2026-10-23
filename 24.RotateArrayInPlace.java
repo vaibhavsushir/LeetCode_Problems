@@ -17,7 +17,6 @@ import java.util.Scanner;
         }
         System.out.println();
     }
-
     static void rotateinplace(int[] arr, int k) {
         int n = arr.length;
         k = k % n;
