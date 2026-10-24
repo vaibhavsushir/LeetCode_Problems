@@ -11,10 +11,3 @@ import java.util.Scanner;
         rotateinplace(arr,k);
         printarray(arr);
     }
-    static void reverse(int[] arr, int i, int j) {
-        while (i < j) {
-            swap(arr, i, j);
-            i++;
-            j--;
-        
-    }
