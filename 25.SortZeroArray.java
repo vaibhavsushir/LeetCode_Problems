@@ -3,7 +3,6 @@ class SortZeroArray {
         int[] arr = {0, 1, 1, 0, 1, 0, 0, 0, 1,0,0,1};
         sort(arr);
         ArrayUtility.printarray(arr);
-
     }
 
     static void sort(int[] arr) {
