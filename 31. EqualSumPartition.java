@@ -5,16 +5,4 @@ import java.util.Scanner;
      public static void main(String[] args) {
 
      }
-     static boolean equalpartition(int[] arr){
-         int totalsum = totalsum(arr);
-         int prefixsum = 0;
-         for(int i = 0 ; i < arr.length; i++){
-              prefixsum = prefixsum + arr[i];
-              int suffixsum = totalsum - prefixsum;
-              if(suffixsum == prefixsum){
-                  return true;
-              }
-         }
-         return false;
-     }
 }
