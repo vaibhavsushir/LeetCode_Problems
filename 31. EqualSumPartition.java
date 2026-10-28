@@ -3,15 +3,6 @@ import Java_Revision.ArrayUtility;
 import java.util.Scanner;
  class EqualSumPartition {
      public static void main(String[] args) {
-         System.out.println("Welcome To Check Array Partition Is Equal\n");
-         int[] arr = ArrayUtility.takingarray();
-         boolean isequal = equalpartition(arr);
-         if(isequal){
-             System.out.println("Partition Is Equal");
-         }else{
-             System.out.println("Partition Is Not Equal");
-         }
-
 
      }
      static int totalsum(int[] arr){
