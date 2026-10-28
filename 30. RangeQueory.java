@@ -8,10 +8,6 @@ class RangeQueory {
         int[] arr = ArrayUtility.takingarray();
         int[] pref = prefixsum(arr);
         while(q-- > 0){
-            System.out.println("Enter Range: ");
-            int l = input.nextInt();
-            int r = input.nextInt();
-
             int ans  = pref[r] - pref[l-1];
             System.out.println("Sum Is "+ans);
         }
