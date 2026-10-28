@@ -1,18 +1,5 @@
 import java.util.Scanner;
  class MultiplicationOfMatrices{
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter First Matrix");
-        System.out.print("Enter Rows: ");
-        int r1 = input.nextInt();
-        System.out.print("Enter Column: ");
-        int c1 = input.nextInt();
-        int[][] arr = new int[r1][c1];
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print("arr[" + i + "][" + j + "] = ");
-                arr[i][j] = input.nextInt();
-            }
         }
         System.out.println("Enter Second Matrix");
         System.out.print("Enter Rows: ");
