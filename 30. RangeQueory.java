@@ -10,18 +10,6 @@ class RangeQueory {
         return arr;
     }
 }
-
-//
-//        int[] pref = prefixsum(arr);
-//
-//        System.out.print("Enter How Many Queries: ");
-//        int q = input.nextInt();
-//
-//        while (q-- > 0) {
-//            System.out.println("Enter Range (l r): ");
-//            int l = input.nextInt(); // left index
-//            int r = input.nextInt(); // right index
-//
 //            int ans;
 //            if (l == 0) {
 //                ans = pref[r];
