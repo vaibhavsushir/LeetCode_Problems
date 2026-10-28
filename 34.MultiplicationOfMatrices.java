@@ -11,13 +11,5 @@ import java.util.Scanner;
         int[][] multiply = multiply(arr, r1, c1, arr2, r2, c2);
         printarr(multiply);
     }
-            static void printarr ( int[][] array){
-                for (int i = 0; i < array.length; i++) {
-                    for (int j = 0; j < array[i].length; j++) {
-                        System.out.print(array[i][j] + " ");
-                    }
-                    System.out.println();
-                }
-
             }
         }
