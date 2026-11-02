@@ -1,15 +1,6 @@
 import java.util.ArrayList;
 class Methods_ArrayList {
     public static void main(String[] args) {
-        System.out.println("get an element at index i");
-        System.out.println(l1.get(1));
-        System.out.println("printing the array list directly");
-        System.out.println(l1);
-        System.out.println("adding element at some index i");
-        l1.add(1,100);
-        System.out.println(l1);
-        System.out.println("modifying element at index i");
-        l1.set(1,10);
         System.out.println(l1);
         System.out.println("Removing an element e");
         l1.remove(Integer.valueOf(7));
