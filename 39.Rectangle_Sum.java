@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
  class Rectangle_Sum {
      static void printarr(int[][] arr){
          for(int i=0; i< arr.length; i++){
@@ -9,7 +8,6 @@ import java.util.Scanner;
              System.out.println();
          }
      }
-
      static int findsum(int[][] matrix, int l1, int r1, int l2, int r2){
      int sum = 0;
      for(int i=l1; i<=l2; i++){
