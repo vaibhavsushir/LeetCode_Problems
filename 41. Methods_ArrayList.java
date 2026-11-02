@@ -3,11 +3,6 @@ class Methods_ArrayList {
     public static void main(String[] args) {
         System.out.println("get an element at index i");
         System.out.println(l1.get(1));
-
-        System.out.println("print with loop");
-        for(int i=0; i<l1.size(); i++){
-            System.out.println(l1.get(i));
-        }
         System.out.println("printing the array list directly");
         System.out.println(l1);
         System.out.println("adding element at some index i");
