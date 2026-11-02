@@ -1,11 +1,6 @@
 import java.util.ArrayList;
 class Methods_ArrayList {
     public static void main(String[] args) {
-        ArrayList<Integer> l1 = new ArrayList<>();
-        l1.add(5);
-        l1.add(7);
-        l1.add(9);
-
         System.out.println("get an element at index i");
         System.out.println(l1.get(1));
 
