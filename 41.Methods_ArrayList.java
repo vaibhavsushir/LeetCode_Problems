@@ -8,7 +8,6 @@ class Methods_ArrayList {
 
         System.out.println("get an element at index i");
         System.out.println(l1.get(1));
-
         System.out.println("print with loop");
         for(int i=0; i<l1.size(); i++){
             System.out.println(l1.get(i));
@@ -27,7 +26,6 @@ class Methods_ArrayList {
         System.out.println("Checking If An Element Exist");
         boolean ans = l1.contains(Integer.valueOf(60));
         System.out.println(ans);
-
         System.out.println("if you dont specify,you can put anything inside it");
         ArrayList l = new ArrayList();
         l.add(98);
