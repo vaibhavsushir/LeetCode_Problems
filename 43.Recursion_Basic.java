@@ -7,8 +7,7 @@ class Recursion_Basic {
                 System.out.println(1);
             }
             f=(n-1) + (n-2);
-            System.out.println(f);
-            fib(n);
+            System.out.println(f);ib(n);
         }
 
 
