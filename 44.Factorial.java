@@ -5,7 +5,6 @@ class Factorial {
             return 1;
         }
         int smallans = factorial(num-1);
-
         int ans = num * smallans;
         return ans;
     }
