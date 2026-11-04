@@ -2,7 +2,6 @@ import java.util.Scanner;
 class SOD_Recursion {
 
     static int sod(int num){
-        //Base Case
         if(num >= 0 && num <= 9){
             return num;
         }
