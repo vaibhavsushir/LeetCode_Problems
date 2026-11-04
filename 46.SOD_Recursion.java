@@ -2,9 +2,6 @@ import java.util.Scanner;
 class SOD_Recursion {
 
     static int sod(int num){
-        int smallans = sod(num / 10);
-        int ans = smallans + num % 10;
-        return ans;
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
