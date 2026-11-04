@@ -6,8 +6,6 @@ class SOD_Recursion {
             return num;
         }
         int smallans = sod(num / 10);
-
-        //Self Work
         int ans = smallans + num % 10;
         return ans;
     }
