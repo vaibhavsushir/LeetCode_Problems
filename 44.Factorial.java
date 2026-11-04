@@ -4,7 +4,6 @@ class Factorial {
         if(num == 0) {
             return 1;
         }
-       
         int ans = num * smallans;
         return ans;
     }
