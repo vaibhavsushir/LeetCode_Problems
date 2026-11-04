@@ -1,9 +1,7 @@
 import java.util.Scanner;
 class Fibonacci {
     static int fib(int num){
-        if(num == 0 || num ==1){
-            return num;
-        }
+
         int prev = fib(num-1);
         int prevprev = fib(num-2);
         return prev + prevprev;
