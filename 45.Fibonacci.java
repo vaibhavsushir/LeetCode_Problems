@@ -6,7 +6,6 @@ class Fibonacci {
         }
         int prev = fib(num-1);
         int prevprev = fib(num-2);
-        //Selfwork
         return prev + prevprev;
     }
 
