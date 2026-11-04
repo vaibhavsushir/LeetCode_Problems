@@ -5,7 +5,6 @@ class SOD_Recursion {
         if(num >= 0 && num <= 9){
             return num;
         }
-        //Recursion Work
         int smallans = sod(num / 10);
 
         //Self Work
