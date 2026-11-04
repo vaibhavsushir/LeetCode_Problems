@@ -2,9 +2,6 @@ import java.util.Scanner;
 class Recursion_Basic {
 
         static void fib(int n) {
-            if(n == 2){
-                System.out.println(1);
-            }
             f=(n-1) + (n-2);
             System.out.println(f);
             fib(n);
