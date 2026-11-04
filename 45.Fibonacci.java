@@ -1,10 +1,6 @@
 import java.util.Scanner;
 class Fibonacci {
     static int fib(int num){
-
-        int prev = fib(num-1);
-        int prevprev = fib(num-2);
-        return prev + prevprev;
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
