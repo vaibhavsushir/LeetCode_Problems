@@ -1,0 +1,41 @@
+class Solution {
+    public int minimumRefill(int[] plants, int capacityA, int capacityB) {
+        int left = 0;
+        int right = plants.length - 1;
+
+        int a = capacityA;
+        int b = capacityB;
+
+        int ans = 0;
+
+        while (left < right) {
+            if (a < plants[left]) {
+                ans++;
+                a = capacityA;
+            }
+            a -= plants[left];
+            left++;
+
+            if (b < plants[right]) {
+                ans++;
+                b = capacityB;
+            }
+            b -= plants[right];
+            right--;
+        }
+
+        if (left == right) {
+            if (a >= b) {
+                if (a < plants[left]) {
+                    ans++;
+                }
+            } else {
+                if (b < plants[left]) {
+                    ans++;
+                }
+            }
+        }
+
+        return ans;
+    }
+}
