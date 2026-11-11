@@ -3,7 +3,6 @@ class Solution {
     int[][] dp;
     int[] suffix;
     int n;
-
     public int stoneGameII(int[] piles) {
         n = piles.length;
         dp = new int[n][n + 1];
