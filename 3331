@@ -1,0 +1,56 @@
+import java.util.*;
+
+class Solution {
+    public int[] findSubtreeSizes(int[] parent, String s) {
+        int n = s.length();
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            adj.add(new ArrayList<>());
+        }
+        for (int i = 1; i < n; i++) {
+            adj.get(parent[i]).add(i);
+        }
+
+        int[] newParent = Arrays.copyOf(parent, n);
+        int[] last = new int[26];
+        Arrays.fill(last, -1);
+
+        dfsReparent(0, s, adj, newParent, last);
+
+        List<List<Integer>> newAdj = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            newAdj.add(new ArrayList<>());
+        }
+        for (int i = 1; i < n; i++) {
+            newAdj.get(newParent[i]).add(i);
+        }
+
+        int[] ans = new int[n];
+        dfsSize(0, newAdj, ans);
+        return ans;
+    }
+
+    private void dfsReparent(int u, String s, List<List<Integer>> adj, int[] newParent, int[] last) {
+        int ch = s.charAt(u) - 'a';
+        int prevAncestor = last[ch];
+        if (prevAncestor != -1) {
+            newParent[u] = prevAncestor;
+        }
+        last[ch] = u;
+
+        for (int v : adj.get(u)) {
+            dfsReparent(v, s, adj, newParent, last);
+        }
+
+        last[ch] = prevAncestor;
+    }
+
+    private int dfsSize(int u, List<List<Integer>> newAdj, int[] ans) {
+        int sz = 1;
+        for (int v : newAdj.get(u)) {
+            sz += dfsSize(v, newAdj, ans);
+        }
+        ans[u] = sz;
+        return sz;
+    }
+}
